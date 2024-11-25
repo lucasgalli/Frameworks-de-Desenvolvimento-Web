@@ -1,0 +1,6 @@
+<h1>Título do formulário</h1>
+<form method="post">
+  {% csrf_token %} {{ variavel_que_vem_da_views.as_p }} {% comment %} as_p é usado para organizar os campos entre o elemento <p> {% endcomment %}
+  <button type="submit">Enviar</button>
+</form>
+<a href="{% url 'nome_de_um_link' %}">Texto visível do link</a> <!-- O nome do link vem do atributo 'name' que fica na rota urls.py-->

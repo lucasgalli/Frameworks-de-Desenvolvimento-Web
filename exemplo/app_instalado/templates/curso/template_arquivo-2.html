@@ -1,0 +1,7 @@
+<h1>Título</h1>
+<ul>
+  {% for variavel in variavel_que_vem_da_views %}
+  <li>{{ variavel.nome_do_campo }} - {{ variavel.nome_do_campo_2 }}h</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'nome_de_um_link' %}">Texto visível do link</a>
